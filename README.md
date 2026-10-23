@@ -29,7 +29,7 @@ The WG will hold regular meetings on *every first Monday of the month at 19:00 C
 You can subscribe to the meeting event calendar with this iCal feed:
 
 ```
-webcals://raw.githubusercontent.com/cleverer/matrix-wg-promote-alternative-homeservers/refs/heads/main/meetings.ics
+webcals://raw.githubusercontent.com/matrix-org/homeserver-decentralisation/refs/heads/main/meetings.ics
 ```
 
 If you want to get involved, join a meeting or just follow our progress, feel free to join the [#homeserver-decentralisation:matrix.org](https://matrix.to/#/%23homeserver-decentralisation:matrix.org) room.
