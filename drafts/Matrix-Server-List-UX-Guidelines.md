@@ -1,9 +1,9 @@
 # Matrix Server List User Experience Guidelines
 
-This is a draft trying to describe how we envision the user experience for finding a matrix homeserver.
+This is a draft trying to describe how we envision the user experience for finding a Matrix homeserver.
 
 In general the Client might either redirect to user to the matrix.org web server picker (TBD) for registering or show it's own UI.
-The Client UI might either be a wizard style, guiding the user through selecting a few filters and then recommending a small list of servers or just pick a random one based on the selection, but still allowing the user to change the selection or be a list or grid based overview of all servers, allowing to ser to apply filters like in a webshop.
+The Client UI might either be a wizard style, guiding the user through selecting a few filters and then recommending a small list of servers, or just pick a random one based on the selection, but still allowing the user to change the selection or be a list or grid based overview of all servers, allowing the user to apply filters like in an online shop.
 
 All the data mentioned in the UX is collected by the list operator and provided to the client directly. The client must not scrape the servers itself before registering to prevent leaking data such as IP addresses or client information to a server.
 
@@ -11,7 +11,7 @@ Note: By default a client should offer servers based on just a few criteria
 
 ## Metadata of a server
 
-Basic metadata should be presented when viewing a servers details. Some might also be shown in a list/grid/overview.
+Basic metadata should be presented when viewing a server's details. Some might also be shown in a list/grid/overview.
 
 Metadata marked with `*` are expected to be shown by all clients and users, not just advanced users.
 
