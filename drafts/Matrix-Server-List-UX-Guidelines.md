@@ -1,0 +1,46 @@
+# Matrix Server List User Experience Guidelines
+
+This is a draft trying to describe how we envision the user experience for finding a Matrix homeserver.
+
+In general the client might either redirect the user to the matrix.org web server picker (TBD) for registering, or show its own UI. 
+The Client UI might be a wizard style, guiding the user through selecting a few filters and then recommending a small list of servers, or just pick a random one based on the selection, but still allowing the user to change the selection. It could also be a list or grid based overview of all servers, allowing the user to apply filters like in an online shop and so on.
+
+All the data mentioned in the UX is collected by the list operator and provided to the client directly. The client must not scrape the servers itself before registering to prevent leaking data such as IP addresses or client information to a server.
+
+Unless the client is geard towards advanced users that at least know what an IP-Address is, it should probably just select a server automatically based on country/legislation and not overwhelm the user. To the user the most relevant thing is just the server name, as it forms part of the username.
+
+## Metadata of a server
+
+Basic metadata should be presented when viewing a server's details. Some might also be shown in a list/grid/overview.
+
+Metadata marked with `*` are expected to be shown by all clients and users, not just advanced users.
+
+| Title                          | Description                                                                                                                                                                                                              |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Server Name*                    | The Matrix [`server_name`](https://spec.matrix.org/latest/appendices/#server-name) of the server, which is used to identify it within the Matrix ecosystem. **Very important, as it determines the username!**                                                              |
+| Server Common/Display Name             | A human-readable name for the server, which can be used for display purposes.                                                                                                                                            |
+| Server URL                     | By definition of the matrix.org policy, this is the same as server name.                                                                                                                                               |
+| Description | Free text 500 character description of what this server is about |
+| Icon URL | Nice Server Favicon for display in the UI |
+| UI URL(s)                      | If the server is providing a web-client (or multiple), the URL(s) to it.                                                                                                                                                 |
+| Server Software                | The name and version of the Matrix server software being used (e.g., Synapse 1.50.0).                                                                                                                                    |
+| Server Admin Contact           | Contact information for the server administrator, such as an email address or a link.                                                           # Matrix Server List User Experience Guidelines
+| Country* | Where is the server located. |
+| Legal Form* | For-Profit/Non-Profit |
+| Hosting Type description       | How and where is the server hosted and what components play into it? eg. self-hosted / housing / colocation / local hoster / hyperscaler / DNS Provider. Basically any technical components required to host the server. |
+| Hosting components legislation | The legislations the individual components of the hosting operate under.                                                                                                                                                 |
+| IPv4 Support                   | Does the server have IPv4 Connectivity (inbound and outbound).                                                                                                                                                           |
+| IPv6 Support                   | Does the server have IPv6 Connectivity (inbound and outbound).                                                                                                                                                           |
+| Sign-Up Process*                | What steps need to be taken to get an account and log in?                                                                                                                                                                |
+| Order of number of active users         | The number of active users (Users retained after 30 days of signup, eg. 100-1000, 1K-10K, etc.)                                                                                                                                                      |
+| Link Preview                  | Server side embeddings are needed to show a privacy preserving Link preview in a messages.                    | ???                                                                                                                                                            |
+| Public room directory          | Allows anyone to browse public rooms of this server                                                           | ???                                                                                                                                                            |
+| Server internal room directory | Allows a user of the server browse all public rooms of the server                                             | ???                                                                                                                                                            |
+| Modern Calls                   | Allows users to have 1:1 and group voice and videocalls                                                       | MatrixRTC, Livekit?                                                                                                                                            |
+| Bridges                       | Allows users to bridge other messenger systems on this server, without having to install a bridge themselves  | -                                                                                                                                                              |
+| Managed moderation services    | Allows a user to create rooms/spaces and add moderation tooling to it without having to install it themselves | -                                                                                                                                                              |
+| Managed Bots                   | Does the Server offer managed bots, eg. for webhooks, games, productivity tools…                              | -                                                                                                                                                              |
+| Upload limits                 | Does the server have limits for uploading files/attachements                                                  | -                                                                                                                                                              |
+| Message retention time        | How far back in time are messages retained?                                                                   | -                                                                                                                                                              |
+| File/Media retention time           | How long are media/files/attachements kept?                                                                         | -                                                                                                                                                              |
+| Technical Authentication flows           | Does the server use/require Oauth, is it using username/password…                                             | [OAuth 2.0 API](https://spec.matrix.org/latest/client-server-api/#oauth-20-api) / [legacy login](https://spec.matrix.org/latest/client-server-api/#legacy-api) (This should not be shown primarly, but the client should choose what it supports) |
