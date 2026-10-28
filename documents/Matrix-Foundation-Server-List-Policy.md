@@ -21,27 +21,29 @@ According to the WGs charter, the WG periodically updates the list. There are no
 
 1. The server must be running a recent version of the Matrix server software ([https://matrix.org/ecosystem/servers/](https://matrix.org/ecosystem/servers/)) that is actively maintained and receives security updates. As a point of reference what we expect, the explanations mentioned here can be taken: https://cyberessentials.online/cyber-essentials-patch-management-explained/
 2. The backups are set up to meet a recovery point objective (RPO) of 24 hours. (https://en.wikipedia.org/wiki/IT_disaster_recovery) We do not expect any RTO, but an off-site backup.
-3. Multiple people have root access to the server and know how to operate and manage it.
-4. The server has a clear policy on how stable its offering is. This means the admins communicate what time frame they will offer between announcing and applying a meaningful reduction to the provided feature set. (This aims to reduce user frustration, if the server suddenly changes its offer.)
+3. Multiple people have access to the server and know how to operate and manage it.
+4. The server commits to giving at least 14 days notice prior a changes to the features it offers. This aims to reduce user frustration, if the server suddenly changes its offer.
 5. The homeserver intends to operate for the long term.
 6. The homeserver is advertised as operating for the public. The onboarding needs to be open for anyone and the process (any steps necessary for signup) are clearly defined and published by the admins.
-7. The server participates in the open Matrix federated network. (It may use a blocklist for moderation purposes, but needs generally allow federation.)
-8. The server provides a human readable website on the servers domain to allow non-technical versed people find the information about their account (eg. reset password, find the login to the webclient…) with at least the following information:
+7. The homeserver server takes appropriate mitigations to prevent sign-ups automated abuse (email, CAPTCHA, token-based approaches, rate-limiting).
+8. The server participates in the open Matrix federated network. (It may use a blocklist for moderation purposes, but needs to generally allow federation.)
+9. The server provides a human readable website on the servers domain to allow people to find the information about their account (eg. reset password, find the login to the webclient…) with at least the following information:
     - Who administrates it?
-    - How can admins be contacted?
+    - How can the admins be contacted?
     - What moderation rules/server rules does the server have?
     - What are the registration requirements/process?
     - Hosting type description (see appendix)
     - Hosting components legislation (see appendix)
-9. The server supports a well-known support endpoint according to the Matrix spec: https://spec.matrix.org/unstable/client-server-api/#getwell-knownmatrixsupport
-10. The server has a moderation policy that aligns with the [Matrix code of conduct](https://matrix.org/legal/code-of-conduct/).
+    - How can a homeserver user manage its own account, specifically describing the process to recover a lost password.
+10. The server supports a well-known support endpoint according to the Matrix spec: https://spec.matrix.org/unstable/client-server-api/#getwell-knownmatrixsupport
+11. The server has a moderation policy that aligns with the [Matrix code of conduct](https://matrix.org/legal/code-of-conduct/).
 
 ## A server may be removed for the following reasons
 
-1. The server fails to meet the criteria outlined above and does not remediate its violations in a reasonable timeframe. This is roughly "weeks" and may be decided case-by-case by the maintainers of the list.
+1. The server fails to meet the criteria outlined above and does not remediate its violations in a 30 days timeframe. Extension of this timeframe can be agreed on between the homeserver admins and the maintainers of the list on request.
 2. The server administration asks for removal from the list.
 3. Server uptime is below a mean of 95% over the period of one year.
-4. The Matrix.org Foundation reserves the right to remove any servers that might negatively affect the Foundation's or Matrix network's reputation or is otherwise decided to be unsafe to pick for new users.
+4. The Matrix.org Foundation can remove a server that negatively affect the Foundation's or Matrix network's reputation or is otherwise decided to be unsafe to pick for new users. If this situation arise, the maintainers of the list has to inform the homeserver admins, clearly communicate the reason of the de-listing and give the homeserver admins 10 days to appeal.
 
 ## How to request inclusion in the list
 
@@ -63,7 +65,7 @@ UI URL(s) | If the server is providing a web-client (or multiple), the URL(s) to
 Server Software | The name and version of the Matrix server software being used (e.g., Synapse 1.50.0).
 Server Admin Contact | Contact information for the server administrator, such as an email address or a link.
 Hosting Type description | How and where is the server hosted and what components play into it? eg. self-hosted / housing / colocation / local hoster / hyperscaler / DNS Provider. Basically any technical components required to host the server.
-Hosting components legislation | The legislations the individual components of the hosting operate under.
+Hosting components legislation | Which legal jurisdiction apply to which component of the homeserver hosting infrastructure.
 IPv4 Support | Does the server have IPv4 Connectivity (inbound and outbound). 
 IPv6 Support | Does the server have IPv6 Connectivity (inbound and outbound).
 OAuth 2.0 API Support | Does the server support [OAuth 2.0 API](https://spec.matrix.org/latest/client-server-api/#oauth-20-api) login / next gen auth?
