@@ -43,7 +43,7 @@ According to the WGs charter, the WG periodically updates the list. There are no
 1. The server fails to meet the criteria outlined above and does not remediate its violations in a 30 days timeframe. Extension of this timeframe can be agreed on between the homeserver admins and the maintainers of the list on request.
 2. The server administration asks for removal from the list.
 3. Server uptime is below a mean of 95% over the period of one year.
-4. The Matrix.org Foundation can remove a server that negatively affect the Foundation's or Matrix network's reputation or is otherwise decided to be unsafe to pick for new users. If this situation arise, the maintainers of the list has to inform the homeserver admins, clearly communicate the reason of the de-listing and give the homeserver admins 10 days to appeal.
+4. The Matrix.org Foundation can remove a server that negatively affect the Foundation's or Matrix network's reputation or is otherwise decided to be unsafe to pick for new users. If this situation arises, the maintainers of the list has to inform the homeserver admins, clearly communicate the reason of the de-listing and give the homeserver admins 10 days to appeal.
 
 ## How to request inclusion in the list
 
