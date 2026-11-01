@@ -22,7 +22,7 @@ According to the WGs charter, the WG periodically updates the list. There are no
 1. The server must be running a recent version of the Matrix server software ([https://matrix.org/ecosystem/servers/](https://matrix.org/ecosystem/servers/)) that is actively maintained and receives security updates. As a point of reference what we expect, the explanations mentioned here can be taken: https://cyberessentials.online/cyber-essentials-patch-management-explained/
 2. The backups are set up to meet a recovery point objective (RPO) of 24 hours. (https://en.wikipedia.org/wiki/IT_disaster_recovery) We do not expect any RTO, but an off-site backup.
 3. Multiple people have access to the server and know how to operate and manage it.
-4. The server commits to giving at least 14 days notice prior a changes to the features it offers. This aims to reduce user frustration, if the server suddenly changes its offer.
+4. The server commits to giving at least 14 days notice prior to changes to the features it offers. This aims to reduce user frustration, if the server suddenly changes its offering.
 5. The homeserver intends to operate for the long term.
 6. The homeserver is advertised as operating for the public. The onboarding needs to be open for anyone and the process (any steps necessary for signup) are clearly defined and published by the admins.
 7. The homeserver server takes appropriate mitigations to prevent sign-ups automated abuse (email, CAPTCHA, token-based approaches, rate-limiting).
