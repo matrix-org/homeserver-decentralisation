@@ -65,7 +65,7 @@ UI URL(s) | If the server is providing a web-client (or multiple), the URL(s) to
 Server Software | The name and version of the Matrix server software being used (e.g., Synapse 1.50.0).
 Server Admin Contact | Contact information for the server administrator, such as an email address or a link.
 Hosting Type description | How and where is the server hosted and what components play into it? eg. self-hosted / housing / colocation / local hoster / hyperscaler / DNS Provider. Basically any technical components required to host the server.
-Hosting components legislation | Which legal jurisdiction apply to which component of the homeserver hosting infrastructure.
+Hosting components legislation | Which legal jurisdiction applies to which component of the homeserver hosting infrastructure.
 IPv4 Support | Does the server have IPv4 Connectivity (inbound and outbound). 
 IPv6 Support | Does the server have IPv6 Connectivity (inbound and outbound).
 OAuth 2.0 API Support | Does the server support [OAuth 2.0 API](https://spec.matrix.org/latest/client-server-api/#oauth-20-api) login / next gen auth?
