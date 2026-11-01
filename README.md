@@ -45,7 +45,7 @@ If you want to get involved, join a meeting or just follow our progress, feel fr
 
 ### Step 2
 
-- Start promoting the list (eg. reach out to homeserver operaetor communities)
+- Start promoting the list (eg. reach out to homeserver operator communities)
 - Talk to client & server implementers (how might a client UX look)
 - Iterate on the application process as a server admin (automating as much as possible)
 - Iterate on the "consuming" of the list (integrate into clients, more formal list format)
