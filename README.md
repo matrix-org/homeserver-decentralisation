@@ -41,6 +41,7 @@ If you want to get involved, join a meeting or just follow our progress, feel fr
 (This is where we are at the moment)
 
 - Finalize a first version of a process to apply
+- Populate initial list with a small amount of data from well-known servers
 - Implement a rudimentary Web Server Picker
 
 ### Step 2
