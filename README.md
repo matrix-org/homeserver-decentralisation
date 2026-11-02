@@ -34,6 +34,28 @@ webcals://raw.githubusercontent.com/matrix-org/homeserver-decentralisation/refs/
 
 If you want to get involved, join a meeting or just follow our progress, feel free to join the [#homeserver-decentralisation:matrix.org](https://matrix.to/#/%23homeserver-decentralisation:matrix.org) room.
 
+## Rough Roadmap
+
+### Step 1
+
+(This is where we are at the moment)
+
+- Finalize a first version of a process to apply
+- Populate initial list with a small amount of data from well-known servers
+- Implement a rudimentary Web Server Picker
+
+### Step 2
+
+- Start promoting the list (eg. reach out to homeserver operator communities)
+- Talk to client & server implementers (how might a client UX look)
+- Iterate on the application process as a server admin (automating as much as possible)
+- Iterate on the "consuming" of the list (integrate into clients, more formal list format)
+
+### Step 3
+
+- Start ~~supporting and~~ pushing guides and best-practices for server operators (_T&S Workgroup is already on this topic_)
+- Work on Account portability
+
 ## Out of Scope
 
 The WG will not focus on the technical development of homeservers themselves, but rather on the onboarding experience and the ecosystem as a whole.
